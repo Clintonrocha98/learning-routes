@@ -9,7 +9,7 @@ export function About() {
         description="pagina com informação da loja Ranek"
       />
 
-      <section className="container animeLeft">
+      <section className="container animeLeft content">
         <div className={styles.sobre}>
           <img src={contato} alt="a woman " />
           <div>

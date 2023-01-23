@@ -79,7 +79,7 @@ time,
 mark,
 audio,
 video {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   margin: 0;
   padding: 0;
   border: 0;
@@ -127,14 +127,19 @@ table {
   width: 100%;
   max-width: 1080px;
 }
+.content {
+  height: calc(100vh - 70px);
+  // display: flex;
+  // align-items: center;
+}
 
-.animeLeft{
+.animeLeft {
   opacity: 0;
   transform: translateX(-20px);
   animation: animeLeft 0.5s forwards;
 }
 @keyframes animeLeft {
-  to{
+  to {
     opacity: initial;
     transform: initial;
   }

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import HeadConfig from "../../hooks/HeadConfig";
 import styles from "./styles.module.scss";
+import { Coments } from "../coments";
 
 export function Product() {
   const [produto, setProduto] = useState(null);
@@ -66,6 +67,7 @@ export function Product() {
             </div>
           </div>
         </div>
+        <Coments />
       </section>
     </>
   );

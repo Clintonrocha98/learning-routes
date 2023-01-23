@@ -13,7 +13,6 @@ export function Products() {
   }, []);
 
   if (produtos === null) return null;
-  
   return (
     <>
       <HeadConfig title="Ranek | Products" description="Products page Ranek" />
