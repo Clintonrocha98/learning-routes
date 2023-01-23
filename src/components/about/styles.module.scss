@@ -1,0 +1,16 @@
+.sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 10px;
+  gap: 10px;
+  img {
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  p{
+    font-size: 1.125rem;
+  }
+}
