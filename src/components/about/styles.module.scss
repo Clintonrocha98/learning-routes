@@ -3,14 +3,22 @@
   grid-template-columns: 1fr 1fr;
   padding: 0 10px;
   gap: 10px;
+  
   img {
     border-radius: 10px;
     margin: 0 auto;
   }
-  h2{
+  @media (max-width: 425px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    img{
+      width: 100%;
+    }
+  }
+  h2 {
     font-size: 2rem;
   }
-  p{
+  p {
     font-size: 1.125rem;
   }
 }

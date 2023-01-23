@@ -1,6 +1,7 @@
 .route {
   margin: 20px 0;
-  a{
+  padding: 10px;
+  a {
     text-decoration: none;
     color: black;
   }
@@ -11,6 +12,7 @@
 .product {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 10px;
   .previw {
     max-width: 300px;
     margin: 0 auto;
@@ -67,6 +69,21 @@
           color: white;
         }
       }
+    }
+  }
+  @media (max-width: 425px) {
+    grid-template-columns: 1fr;
+    .description {
+      .warrapButton {
+        gap: 10px;
+        button {
+          width: 100%;
+        }
+      }
+    }
+    .previw {
+      order: 1;
+      margin-top: 20px;
     }
   }
 }
