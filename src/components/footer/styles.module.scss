@@ -1,0 +1,47 @@
+.icons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 10px;
+  svg {
+    animation: all 0.5s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      scale: 1.2;
+      background-color: #ffc44d;
+      border-radius: 5px;
+    }
+  }
+}
+.infoFooter {
+  display: grid;
+  grid-auto-flow: column;
+  margin-bottom: 20px;
+  span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .warrapInfo {
+    h3 {
+      margin-bottom: 5px;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      li {
+        &:hover {
+          color: #ffc44d;
+          cursor: pointer;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

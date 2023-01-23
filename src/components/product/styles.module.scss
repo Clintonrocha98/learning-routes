@@ -1,0 +1,72 @@
+.route {
+  margin: 20px 0;
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  span {
+    font-weight: bold;
+  }
+}
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  .previw {
+    max-width: 300px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+  .description {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    h1 {
+      font-weight: 800;
+      font-size: 2rem;
+    }
+    p {
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+    span {
+      font-weight: 800;
+      font-size: 1.5rem;
+    }
+    .warrapButton {
+      display: flex;
+      justify-content: space-around;
+      button {
+        background-color: #f9c53d;
+        color: white;
+        font-weight: 600;
+        font-size: 1.125rem;
+        border-radius: 25px;
+        border: none;
+
+        width: 200px;
+        height: 50px;
+
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          background-color: white;
+          color: #f9c53d;
+          border: 2px solid #f9c53d;
+          scale: 0.9;
+        }
+      }
+      button:last-child {
+        background-color: white;
+        color: #f9c53d;
+        border: 2px solid #f9c53d;
+        &:hover {
+          background-color: #f9c53d;
+          color: white;
+        }
+      }
+    }
+  }
+}
